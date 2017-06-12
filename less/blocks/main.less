@@ -1,0 +1,364 @@
+.main {
+
+  &::before {
+    position: absolute;
+    top: 327px;
+    left: 1.8%;
+    display: block;
+    content: "";
+    width: 96%;
+    height: 240px;
+    background-image: url(../img/tesla.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+    z-index: 0;
+  }
+}
+
+.main__description {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 840px;
+  box-sizing: border-box;
+  padding-top: 220px;
+  background: linear-gradient(#4b4d61, #62647d);
+}
+
+.main__description-item {
+  position: relative;
+  width: 31.25%;
+  margin-right: 6.8%;
+  z-index: 2;
+}
+
+.main__header {
+  .font-h1();
+  margin: 0;
+
+  @media @desktop-s {
+    font-size: 40px;
+  }
+}
+
+.main__caption {
+  .font-paragraph();
+  width: 92%;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 48px;
+
+  @media @desktop-s {
+    font-size: 16px;
+  }
+}
+
+.main__btn {
+  .font-btn();
+  position: relative;
+  display: block;
+  width: 230px;
+  padding: 19px 0 20px 0;
+  border: 6px solid @white;
+  border-radius: 3px;
+  text-align: center;
+
+  @media @desktop-s {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: @white;
+    color: @violet;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    display: block;
+    width: 30px;
+    height: 129px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+    z-index: 4;
+
+    @media @desktop-s {
+      top: 50px;
+      right: -50px;
+    }
+  }
+}
+
+.main__switcher {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4%;
+  margin-top: 133px;
+  z-index: 4;
+}
+
+.main__switcher-input {
+  display: none;
+}
+
+.main__switcher-label {
+  display: block;
+  content: "";
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 27px;
+  border-radius: 50%;
+  background-color: #9c9dac;
+  cursor: pointer;
+}
+
+.main__switcher-input:checked + .main__switcher-label {
+  width: 26px;
+  height: 26px;
+  border: 2px solid @white;
+  background-color: transparent;
+}
+
+.main__specs {
+  position: relative;
+  display: flex;
+  height: 540px;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 840px;
+    background-image: url(../img/car.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+    z-index: 1;
+  }
+}
+
+.main__specs-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  height: 100%;
+  color: @white;
+
+  &:first-child {
+    background-color: @dark-violet;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8%;
+      display: block;
+      width: 30px;
+      height: 182px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -45px -5px;
+      z-index: 4;
+
+      @media @desktop-s {
+        top: -25%;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: @dark-blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      display: block;
+      width: 30px;
+      height: 155px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -85px -5px;
+      z-index: 4;
+
+      @media @desktop-s {
+        top: -20%;
+      }
+    }
+  }
+
+  &:last-child {
+
+    background-color: @dark-violet;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15%;
+      display: block;
+      width: 30px;
+      height: 196px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -125px -5px;
+      z-index: 4;
+
+      @media @desktop-s {
+        top: -25%;
+      }
+    }
+  }
+}
+
+.main__specs-figure {
+  .font-figure();
+  display: block;
+  position: relative;
+  padding-top: 40%;
+  z-index: 5;
+}
+
+.main__specs-caption {
+  .font-spec-caption();
+  position: relative;
+  display: block;
+  padding-top: 16%;
+  z-index: 5;
+
+  @media @desktop-s {
+    padding-top: 30%;
+  }
+}
+
+.main__exterior,
+.main__interior {
+  display: flex;
+  height: 25%;
+}
+
+.main__terior-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.main__terior-header {
+  .font-h2();
+  position: relative;
+  margin: 0;
+  margin-left: 19.8%;
+
+  @media @desktop-s {
+    font-size: 30px;
+  }
+
+  &--exterior {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 490px;
+      display: block;
+      width: 405px;
+      height: 30px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -165px -5px;
+      z-index: 4;
+
+      @media @desktop-s {
+        left: 300px;
+      }
+    }
+  }
+
+  &--interior {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 110%;
+      display: block;
+      width: 147px;
+      height: 30px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -580px -5px;
+      z-index: 4;
+
+      @media @desktop-s {
+        right: 105%;
+      }
+    }
+  }
+}
+
+.main__terior-caption {
+  .font-paragraph();
+  width: 65%;
+  margin-left: 19.8%;
+
+  @media @desktop-s {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.main__exterior-image,
+.main__interior-image {
+  width: 50%;
+}
+
+.main__terior-img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 291px;
+  background-color: @white;
+}
+
+.main__test-btn {
+  .font-btn();
+  display: block;
+  box-sizing: border-box;
+  width: 27%;
+  height: 90px;
+  border: 5px solid @dark-blue;
+  padding-top: 29px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: @dark-blue;
+  border-radius: 5px;
+
+  @media @desktop-s {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: @white;
+    color: @dark-blue;
+  }
+}
+
+.main__test-warning {
+  .font-caption();
+
+  @media @desktop-s {
+    font-size: 16px;
+  }
+}

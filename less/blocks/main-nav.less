@@ -1,0 +1,43 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo-link {
+  display: block;
+  padding-top: 43px;
+  margin-left: 6.8%;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 43.2%;
+  margin-right: 6.8%;
+  padding-top: 55px;
+}
+
+.main-nav__item {
+  margin-left: 3.36%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.main-nav__link {
+  .font-nav();
+
+  @media @desktop-s {
+    font-size: 20px;
+  }
+
+  &:hover {
+    color: @white;
+  }
+
+  &--active {
+    color: @white;
+  }
+}

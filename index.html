@@ -9,85 +9,93 @@
 </head>
 <body>
 
-  <header class="page-header">
-    <nav class="main-nav">
-      <img class="main-nav__logo" src="http://via.placeholder.com/338x128" alt="Tesla logo" width="338" height="128">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Order</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Test Drive</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Charging</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Gallery</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Videos</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-wrapper">
 
-  <main class="main">
-    <div class="main__description">
-      <h1 class="main__header">Tesla Model S</h1>
-      <p class="main__caption">The Tesla Model S is a full-sized electric five-door, luxury liftback, produced by Tesla Motors. Since its introduction in June 2012 it has achieved rapidly growing sales, particularly in Norway and California.</p>
-      <a href="#" class="main__btn">Test Drive</a>
-    </div>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__logo-link">
+          <img class="main-nav__logo" src="img/main-logo.png" alt="Tesla logo" width="338" height="128">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Order</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Test&nbsp;Drive</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Charging</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Gallery</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Videos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="main__switcher">
-      <input id="switcher-1" type="radio" name="switcher" class="main__switcher-input">
-      <label for="switcher-1" class="main__switcher-label"></label>
-      <input id="switcher-2" type="radio" name="switcher" class="main__switcher-input">
-      <label for="switcher-2" class="main__switcher-label"></label>
-      <input id="switcher-3" type="radio" name="switcher" class="main__switcher-input">
-      <label for="switcher-3" class="main__switcher-label"></label>
-      <input id="switcher-4" type="radio" name="switcher" class="main__switcher-input">
-      <label for="switcher-4" class="main__switcher-label"></label>
-      <input id="switcher-5" type="radio" name="switcher" class="main__switcher-input">
-      <label for="switcher-5" class="main__switcher-label"></label>
-    </div>
+    <main class="main">
+      <div class="main__description">
+        <div class="main__description-item">
+          <h1 class="main__header">Tesla Model S</h1>
+          <p class="main__caption">The Tesla Model S is a full-sized electric five-door, luxury liftback, produced by Tesla Motors. Since its introduction in June 2012 it has achieved rapidly growing sales, particularly in Norway and California.</p>
+          <a href="#" class="main__btn">Test Drive</a>
+        </div>
 
-    <section class="main__specs">
-      <div class="main__specs-item">
-        <em class="main__specs-figure">5+2</em>
-        <span class="main__specs-caption">Available seats</span>
+          <div class="main__switcher">
+            <input id="switcher-1" type="radio" name="switcher" class="main__switcher-input" checked>
+            <label for="switcher-1" class="main__switcher-label"></label>
+            <input id="switcher-2" type="radio" name="switcher" class="main__switcher-input">
+            <label for="switcher-2" class="main__switcher-label"></label>
+            <input id="switcher-3" type="radio" name="switcher" class="main__switcher-input">
+            <label for="switcher-3" class="main__switcher-label"></label>
+            <input id="switcher-4" type="radio" name="switcher" class="main__switcher-input">
+            <label for="switcher-4" class="main__switcher-label"></label>
+            <input id="switcher-5" type="radio" name="switcher" class="main__switcher-input">
+            <label for="switcher-5" class="main__switcher-label"></label>
+        </div>
       </div>
 
-      <div class="main__specs-item">
-        <em class="main__specs-figure">3.2<sup>sec</sup></em>
-        <span class="main__specs-caption">0—60 max acceleration</span>
-      </div>
+      <section class="main__specs">
+        <div class="main__specs-item">
+          <em class="main__specs-figure">5+2</em>
+          <span class="main__specs-caption">Available seats</span>
+        </div>
 
-      <div class="main__specs-item">
-        <em class="main__specs-figure">275<sup>mi</sup></em>
-        <span class="main__specs-caption">Range at 65 mph</span>
-      </div>
-    </section>
+        <div class="main__specs-item">
+          <em class="main__specs-figure">3.2<sup>sec</sup></em>
+          <span class="main__specs-caption">0—60 max acceleration</span>
+        </div>
 
-    <section class="main__exterior">
-      <div class="main__terior-description main__terior-description--exterior">
-        <h2 class="main__terior-header main__terior-header--exterior">Carbon Fiber Spoiler</h2>
-        <p class="main__terior-caption main__terior-caption--exterior">Beginning with vehicles manufactured in late September 2014, all new Model S's come equipped with a camera mounted at the top of the windshield, forward looking radar in the lower grill, and ultrasonic sonar sensors in the front and rear bumpers that provide a 360-degree buffer zone around the car.</p>
-      </div>
-      <div class="main__exterior-image">
-        <img class="main__terior-img main__terior-img--exterior" src="http://via.placeholder.com/960x480" alt="Tesla exterior" width="960" height="480">
-      </div>
-    </section>
+        <div class="main__specs-item">
+          <em class="main__specs-figure">275<sup>mi</sup></em>
+          <span class="main__specs-caption">Range at 65 mph</span>
+        </div>
+      </section>
 
-    <section class="main__interior">
-      <div class="main__terior-description main__terior-description--interior">
-        <h2 class="main__terior-header main__terior-description--interior">Premium Interior</h2>
-        <p class="main__terior-caption main__terior-description--interior">The instrument panel is a 12.3 in (31 cm) LCD display that indicates speed, power usage, charge level, estimated range and active gear. The gearbox can be set to Drive, Neutral, Reverse and Park.</p>
-      </div>
-      <div class="main__interior-image">
-        <img class="main__terior-img main__terior-img--interior" src="http://via.placeholder.com/960x480" alt="Tesla interior" width="960" height="480">
-      </div>
-    </section>
+      <section class="main__exterior">
+        <div class="main__terior-description main__terior-description--exterior">
+          <h2 class="main__terior-header main__terior-header--exterior">Carbon Fiber Spoiler</h2>
+          <p class="main__terior-caption main__terior-caption--exterior">Beginning with vehicles manufactured in late September 2014, all new Model S's come equipped with a camera mounted at the top of the windshield, forward looking radar in the lower grill, and ultrasonic sonar sensors in the front and rear bumpers that provide a 360-degree buffer zone around the car.</p>
+        </div>
+        <div class="main__exterior-image">
+          <img class="main__terior-img main__terior-img--exterior" src="img/exterior.jpg" alt="Tesla exterior" width="960" height="480">
+        </div>
+      </section>
 
-    <section class="main__test">
-      <a href="" class="main__test-btn">Join us to test drive</a>
-      <em class="main__test-warning">* All guests who wish to test drive the new Tesla Model S will be subject to a credit check</em>
-    </section>
-  </main>
+      <section class="main__interior">
+        <div class="main__interior-image">
+          <img class="main__terior-img main__terior-img--interior" src="img/interior.jpg" alt="Tesla interior" width="960" height="480">
+        </div>
+        <div class="main__terior-description main__terior-description--interior">
+          <h2 class="main__terior-header main__terior-header--interior">Premium Interior</h2>
+          <p class="main__terior-caption main__terior-description--interior">The instrument panel is a 12.3 in (31 cm) LCD display that indicates speed, power usage, charge level, estimated range and active gear. The gearbox can be set to Drive, Neutral, Reverse and Park.</p>
+        </div>
+      </section>
 
-  <footer class="page-footer">
-    <img class="page-footer__logo" src="http://via.placeholder.com/66x70" alt="Tesla logo small" width="66" height="70">
-  </footer>
+      <section class="main__test">
+        <a href="" class="main__test-btn">Join us to test drive</a>
+        <em class="main__test-warning">* All guests who wish to test drive the new Tesla Model S will be subject to a credit check</em>
+      </section>
+    </main>
 
+    <footer class="page-footer">
+      <a href="" class="page-footer__logo-link">
+        <img class="page-footer__logo" src="img/logo-small.png" alt="Tesla logo small" width="66" height="70">
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
