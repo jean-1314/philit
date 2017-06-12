@@ -34,6 +34,7 @@
 }
 
 .main__header {
+
   .font-h1();
   margin: 0;
 
@@ -88,6 +89,10 @@
     @media @desktop-s {
       top: 50px;
       right: -50px;
+    }
+
+    @media @desktop-l {
+      top: 120px;
     }
   }
 }
@@ -173,6 +178,10 @@
       @media @desktop-s {
         top: -25%;
       }
+
+      @media @desktop-l {
+        top: -5%;
+      }
     }
   }
 
@@ -194,11 +203,14 @@
       @media @desktop-s {
         top: -20%;
       }
+
+      @media @desktop-l {
+        top: -2%;
+      }
     }
   }
 
   &:last-child {
-
     background-color: @dark-violet;
 
     &::before {
@@ -215,6 +227,10 @@
 
       @media @desktop-s {
         top: -25%;
+      }
+
+      @media @desktop-l {
+        top: -10%;
       }
     }
   }
